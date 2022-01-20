@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Wall - Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Start Header -->
+        <header class="header" id="header">
+            <div class="container" >
+                <nav class="navigation" >
+                    <div class="header-logo" >
+                        <img src="images/logo.webp" alt="">
+                    </div>
+                <ul class="nav-ul" >
+                    <li><a id="headerHome" href="index.html">Home</a></li>
+                    <li><a href="#aboutUsSection">About</a></li>
+                    <li><a href="#safetySection">Services</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <div class="header-dropdown-parent" >
+                        <li><a id="headerGallery" href="#">Gallery <i id="galleryDropdownIcon" class="fas fa-caret-down"></i></a></li>
+                        <div class="header-dropdown_" >
+                            <ul class="header-dropdown-ul">
+                                <li><a href="#gallerySection">Gallery</a></li>
+                                <li><a href="#testimonialsSection">Testimonials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <li><a href="#testimonialsSection">Review</a></li>
+                    <li><a href="contact.html" id="headerCheck"><i class="fas fa-calendar-check"></i> Make An Appointment</a></li>
+                </ul>
+                <div class="responsive-nav" >
+                    <i id="bar" class="fas fa-bars"></i>
+                    <i id="times" class="hidden fas fa-times"></i>
+                </div>
+            </nav>
+            </div>
+        </header>
+    <!-- End header -->
+    <!-- Contact Section Start -->
+    <section class="contact-section" >
+        <div class="container" >
+            <div class="contact-intro" >
+                <p>Get In Touch</p>
+                <h1>Contact Us</h1>
+            </div>
+            <div class="contact-parent" >
+                <div class="first-contact" >
+                    <h1>Contact Info</h1>
+                    <ul class="contact-first-ul">
+                        <li><i class="fas fa-map-marker-alt"></i> Build wall, 207th Ave, 9000, NewYork</li>
+                        <li><i class="fas fa-phone-alt"></i>+1 123 456 786</li>
+                        <li><i class="fas fa-envelope"></i>info@example.com</li>
+                    </ul>
+                </div>
+                <div class="second-contact" >
+                    <h1>Opening Hours</h1>
+                    <ul class="contact-second-ul" >
+                        <li>Fri-----24/7</li>
+                        <li>Sun - Thu-----8:00am - 11:30pm</li>
+                        <li>Saturday-----Closed</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact-main-parent" >
+                <form class="contact-main-inputs" action="">
+                    <input type="name" placeholder="Name*">
+                    <input type="email" placeholder="Email*">
+                    <input type="text" placeholder="Subject">
+                </form>
+                <form class="contact-message" action="">
+                    <input type="text" placeholder="Write Your Message*">
+                </form>
+                <div class="submit-contact" >
+                    <button>Send Message</button>
+                </div>
+            </div>
+          
+        </div>
+    </section>
+        <!-- Footer Start -->
+        <footer class="footer" >
+            <div class="container" >
+                <div class="footer-parent" >
+                    <div class="first-footer" >
+                        <h1>Contact Info</h1>
+                        <ul class="footer-first-ul">
+                            <li><i class="fas fa-map-marker-alt"></i> Build wall, 207th Ave, 9000, NewYork</li>
+                            <li><i class="fas fa-phone-alt"></i>+1 123 456 786</li>
+                            <li><i class="fas fa-envelope"></i>info@example.com</li>
+                        </ul>
+                    </div>
+                    <div class="second-footer" >
+                        <h1>Opening Hours</h1>
+                        <ul class="footer-second-ul" >
+                            <li>Fri-----24/7</li>
+                            <li>Sun - Thu-----8:00am - 11:30pm</li>
+                            <li>Saturday-----Closed</li>
+                        </ul>
+                    </div>
+                    <div class="last-footer" >
+                        <h1>Newsletter</h1>
+                        <form action="">
+                            <input type="email" placeholder="Your email.." id="footer-input">
+                        </form>
+                        <button id="emailSub">Subcribes <i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+                <div class="footer-copy" >
+                    <p>Car Repairing © 2021 - Designed by Thesoft.</p>
+                    <p>Terms & Conditions | Privacy Policy</p>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+    <!-- Contact Section End -->
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>

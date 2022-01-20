@@ -1,0 +1,68 @@
+.about-us-section{
+    padding-top: 80px;
+    animation: mainAn 1s 0.3s linear forwards;
+    opacity: 0;
+    width: 100%;
+    
+}
+.about-us-intro{
+    text-align: center;
+    p{
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.5;
+        color: $mainYellow;
+        font-weight:600;
+        font-size: 19px;
+    }
+    h1{
+        font-size: 35px;
+        font-family: 'Oswald', sans-serif;
+        color: rgb(48, 48, 48);
+    }
+}
+.about-us-title{
+   line-height: 1.5; 
+   h1{
+    color: rgb(48, 48, 48);
+    font-family: $mainBoldFont;
+   } 
+   p{
+       font-family: $mainFont;
+       letter-spacing: 5.3;
+   }
+}
+
+.about-us-parent{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.about-us-img{
+    img{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width:1076px){
+    .about-us-parent{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media only screen and(max-width:412px){
+    .about-us-img{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+@keyframes mainAn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

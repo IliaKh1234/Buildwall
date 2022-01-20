@@ -1,0 +1,55 @@
+.safety-section{
+    padding-top: 20px;
+    width: 100%;
+    animation: mainAn 1s 0.3s linear forwards;
+    opacity: 0;
+}
+
+.safety-title{
+    text-align: center;
+    p{
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.5;
+        color: $mainYellow;
+        font-weight:600;
+        font-size: 19px;
+    }
+    h1{
+        font-size: 38px;
+        font-family: 'Oswald', sans-serif;
+        color: rgb(48, 48, 48);
+    }
+}
+
+.safety-signs-parent{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+        width: 130px;
+    }
+}
+.safety-signs-first,.safety-signs-second{
+    display: flex;
+    text-align: center;
+
+    font-size: 15px;
+    line-height: 1.5;
+    div{
+        padding: 15px;
+    }
+    h1{
+        font-family: $mainBoldFont;  
+        color: $mainYellow;
+    }
+    p{
+        font-family: $mainFont;
+        color: rgb(48, 48, 48);
+    }
+}
+@media only screen and (max-width:600px){
+    .safety-signs-first,.safety-signs-second{
+        flex-direction: column;
+    }
+}

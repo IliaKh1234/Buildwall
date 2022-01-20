@@ -1,0 +1,31 @@
+.service-section{
+    width: 100%;
+    height: 37vh;
+    background: url(../images/service.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.service-title{
+    text-align: center;
+    padding-top: 50px;
+    line-height: 1.8;
+    h1{
+        color: white;
+        font-family: $mainBoldFont;
+        font-size: 33px;
+    }
+    p{
+        font-family: $mainBoldFont;
+        color: $mainYellow;
+        font-size: 25px;
+    }
+}
+@media only screen and(max-width:575px){
+    .service-title{
+        p{
+            display: none;
+        }
+    }
+}

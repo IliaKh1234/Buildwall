@@ -1,0 +1,96 @@
+.gallery-section{
+    margin-top: 60px;
+    width: 100%;
+    background: $mainGrey;
+    animation: mainAn 1s 1s linear forwards;
+    padding-bottom: 40px;
+}
+
+.gallery-intro{
+        padding-top: 40px;
+        text-align: center;
+        p{
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.5;
+            color: $mainYellow;
+            font-weight:600;
+            font-size: 19px;
+        }
+        h1{
+            font-size: 38px;
+            font-family: 'Oswald', sans-serif;
+            color: rgb(48, 48, 48);
+        }
+}
+
+.gallery-parent{
+    img{
+        width: 23%;
+        cursor: pointer;
+        padding: 10px;
+
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-first{
+    display: flex;
+    justify-content: center;
+}
+.second-gallery{
+    display: flex;
+    justify-content: center;
+}
+.gallery-button{
+    padding-top: 20px;
+    padding-bottom: 20px ;
+    button{
+        background: white;
+        padding: 10px 15px 10px 15px;
+        margin-left: 5px;
+        margin-right: 5px;
+        border: none;
+        cursor: pointer;
+    }
+    text-align: center;
+}
+
+@media only screen and (max-width:950px){
+    .gallery-first,.second-gallery{
+        flex-direction: column;
+        align-items: center;
+        img{
+            width: 50%;
+        }
+    }
+}
+
+@media only screen and (max-width:700px){
+    .gallery-parent{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.more-gallery{
+    padding-top: 20px;
+    text-align: center;
+    button{
+        padding: 15px 30px 15px 30px;
+        background: white;
+        border: 1px solid $mainYellow;
+        font-family: $mainFont;
+        color: $mainYellow;
+        border-radius: 30px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: 0.3s all ease-in-out;
+        &:hover{
+            background: $mainYellow;
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,132 @@
+.contact-section{
+    padding-top: 130px;
+    background: $mainGrey;
+    padding-bottom: 62px;
+}
+.contact-intro{
+    text-align: center;
+    h1{
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.5;
+        color: rgb(48, 48, 48);      
+        font-weight:600;
+        font-size: 19px;
+    }
+    p{
+        color: $mainYellow;
+        font-size: 38px;
+        font-family: 'Oswald', sans-serif;
+    }
+}
+
+.first-contact,.second-contact{
+    h1{
+        color: $mainYellow;
+        font-family: $mainBoldFont;
+    }
+    i{
+        color: $mainYellow;
+        padding-right: 15px;
+    }
+    li{
+        line-height: 1.5;
+        color: rgb(48, 48, 48);
+    }
+}
+
+.contact-parent{
+    display: flex;
+    justify-content: space-around;
+}
+.contact-main-parent{
+    padding: 40px;
+}
+
+.contact-main-inputs{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    input{
+        margin-top: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 5px 75px 5px 10px;
+        border-radius: 3px;
+        border: 1px solid rgb(48, 48, 48);
+        border-bottom: 2px solid $mainYellow;
+        font-size: 17px;
+        background: none;
+        background: none;
+    }
+}
+.contact-message{
+    display: flex;
+    justify-content: center;
+    input{
+        margin-top: 30px;
+        width: 63.5%;
+        padding-bottom: 130px;
+        padding-left: 15px;
+        padding-top: 20px;
+        border-radius: 3px;
+        border: 1px solid rgb(48, 48, 48);
+        border-bottom: 2px solid $mainYellow;
+        font-size: 17px;
+        background: none;
+        background: none;
+        ::placeholder{
+            color: rgb(48, 48, 48);
+            font-family: $mainFont;
+            font-size: 16px;
+        }
+    }
+}
+
+
+@media only screen and (max-width:600px){
+    .contact-parent{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}
+@media only screen and (max-width:350px){
+    .contact-main-inputs{
+        input{
+            padding-right: 10px;
+        }
+    }
+    .contact-message{
+        input{
+            width: auto;
+            padding-bottom: 40px;
+        }
+    }
+    .first-contact,.second-contact{
+        i{
+            padding-right: 5px;
+        }
+    }
+}
+.submit-contact{
+    display: flex;
+    justify-content: center;
+    button{
+        font-family: $mainFont;
+        font-size: 17px;
+        font-weight: 700;
+        color: $mainYellow;
+        margin-top: 20px;
+        padding: 15px 20px 15px 20px;
+        background: none;
+        border: 1px solid $mainYellow;
+        border-radius: 30px;
+        transition: 0.3s all ease-in-out;
+        cursor: pointer;
+        &:hover{
+            background: $mainYellow;
+            color: white;   
+        }
+
+    }
+}

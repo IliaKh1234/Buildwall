@@ -1,0 +1,101 @@
+.blog-section{
+    padding-top: 40px;
+    width: 100%;
+    background: #FEF5F5;
+}
+.blog-intro{
+    text-align: center;
+    p{
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.5;
+        color: $mainYellow;
+        font-weight:600;
+        font-size: 19px;
+    }
+    h1{
+        font-size: 35px;
+        font-family: 'Oswald', sans-serif;
+        color: rgb(48, 48, 48);
+    }
+}
+
+.blog-parent{
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    img{
+        width: 350px;
+        transition: 0.3s all ease-in-out;
+        cursor: pointer;
+        &:hover{
+            transform: rotate(5deg);
+            width: 360px ;
+        }
+    }
+    h2{
+        font-family: $mainBoldFont;
+        color: rgb(48, 48, 48);
+        padding-bottom: 5px;
+        padding: 10px;
+    }
+    p{
+        color: rgb(48, 48, 48);
+        font-family: $mainFont;
+        padding: 10px;
+    }
+    button{
+        padding: 0;
+        padding: 5px 10px 5px 10px;
+        background: $mainYellow;
+        border: none;
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+        transition: 0.3s all ease-in-out;
+        &:hover{
+            text-decoration: underline;
+            color: $mainYellow;
+        }
+    }
+}
+
+.blog-date{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    padding-right: 15px;
+}
+
+.first-blog,.second-blog,.third-blog{
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-left: 10px;
+    overflow: hidden;
+}
+.blog-title{
+    background: white;
+}
+
+.view-more-blog{
+    text-align: center;
+    padding: 40px;
+    button{
+        padding: 15px 20px 15px 20px;
+        border-radius: 30px;
+        border: 1px solid $mainYellow;
+        background: none;
+        color: $mainYellow;
+        font-weight: 800;
+        cursor: pointer;
+        transition: 0.3s all ease-in-out;
+        &:hover{
+            color: white;
+            background: $mainYellow;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.partner-section{
+    padding-bottom: 40px;
+}
+.partner-title{
+    padding-top: 40px;
+    text-align: center;
+    p{
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.5;
+        color: $mainYellow;
+        font-weight:600;
+        font-size: 19px;
+    }
+    h1{
+        font-size: 38px;
+        font-family: 'Oswald', sans-serif;
+        color: rgb(48, 48, 48);
+    }
+}
+
+.partner-img-parent{
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    img{
+        padding-top: 15px;
+        padding-left: 35px;
+        padding-right: 35px;
+        width: 200px;
+    }
+}

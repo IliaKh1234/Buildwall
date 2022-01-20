@@ -1,0 +1,54 @@
+.testimonials-section{
+    background: #C00113;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.testimonials-intro{
+    text-align: center;
+    color: white;
+    p{
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.5;
+        font-weight:600;
+        font-size: 19px;
+    }
+    h1{
+        font-size: 38px;
+        font-family: 'Oswald', sans-serif;
+    }
+}
+.testimonial-name{
+    line-height: 1.5;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.testimonials-people{
+    padding-top: 50px;
+    text-align: center;
+    img{
+        padding: 4px;
+        border: 3px solid white;
+        border-radius: 50%;
+    }
+    p{
+        padding-top: 20px;
+        color: white;
+        line-height: 1.5;
+    }
+    i{
+        color: #FFCE39;
+    }
+    h3{
+        color: white;
+        font-family: 'Mochiy Pop P One', sans-serif;
+    }
+}
+.testimonial-next{
+    i{
+        font-size: 10px;
+        padding-left: 3px;
+        padding-right: 3px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,94 @@
+.footer-parent{
+    line-height: 2;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    input{
+        padding: 10px 75px 10px 10px;
+        border-radius: 3px;
+        border: 1px solid white;
+        border-bottom: 2px solid $mainYellow;
+        font-size: 17px;
+        background: none;
+    }
+    i{
+        color: $mainYellow;
+    }
+    button{
+        color: white;
+        border: 1px solid white;
+        text-align: center;
+        background: none;
+        margin-top: 10px;
+        padding: 15px 112px 15px 112px;
+        cursor: pointer;
+        transition: 0.3s all ease-in-out;
+        border-radius: 3px;
+        i{
+            color: white;
+        }
+        &:hover{
+            background: $mainYellow;
+            color: white;
+        }
+    }
+}
+.footer{
+    padding-top: 30px;
+    width: 100%;
+    background: black;
+    padding-bottom: 50px;
+    li{
+        color: gray;
+        padding-left: 5px; 
+        font-family: $mainFont;
+    }
+    h1{
+        color: $mainYellow;
+        font-family: $mainBoldFont;
+    }
+}
+
+.footer-copy{
+    color: white;
+    font-family: $mainFont;
+    font-weight: 700;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    :nth-child(1){
+        margin-left: 130px;
+    }
+    :nth-child(2){
+        margin-right: 130px;
+    }
+}
+
+@media only screen and(max-width:550px){
+    .footer-parent{
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-copy{
+        flex-direction: column;
+        text-align: center;
+        line-height: 1.5;
+        :nth-child(1){
+            margin: 0;
+        }
+        :nth-child(2){
+            margin: 0;
+        }
+    }
+}
+
+@media only screen and(max-width:350px){
+    .footer-parent{
+        input{
+            padding: 10px 30px 10px 10px;
+        }
+        button{
+            padding: 10px 30px 10px 10px;
+        }
+    }
+}
